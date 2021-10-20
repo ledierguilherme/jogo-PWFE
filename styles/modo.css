@@ -32,52 +32,51 @@
 } */
 
 .container-maquina h1 {
-    font-size: clamp(.1em, 1em + 2vw, 4em);
+    font-size: clamp(0.1em, 1em + 2vw, 4em);
     color: #2707b6;
 }
 
 .container-maquina p {
     width: 47%;
-    font-size: clamp(.1em, 1em + .5vw, 1.2em);
+    font-size: clamp(0.1em, 1em + 0.5vw, 1.2em);
     text-align: center;
     color: #3b3b3b;
     border: 4px solid #3b3b3b;
 }
 
-.container-maquina button#facil {
+/* .container-maquina button#facil {
     width: 50%;
     height: 12%;
     background-color: #3b7c2e;
     font-family: 'Teko', sans-serif;
     font-weight: 600;
-    font-size: clamp(.0em, 1em + 1vw, 2em);
+    font-size: clamp(0em, 1em + 1vw, 2em);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+} */
+
+button {
+    width: 14vw;
+    height: 7vh;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0em, 1em + 1vw, 2em);
     text-decoration: none;
     text-align: center;
     color: white;
 }
 
-.container-maquina button#medio {
-    width: 50%;
-    height: 12%;
+.btn_f {
+    background-color: #3b7c2e;
+}
+
+.btn_m {
     background-color: #695723;
-    font-family: 'Teko', sans-serif;
-    font-weight: 600;
-    font-size: clamp(.0em, 1em + 1vw, 2em);
-    text-decoration: none;
-    text-align: center;
-    color: white;
 }
 
-.container-maquina button#dificil {
-    width: 50%;
-    height: 12%;
+.btn_d {
     background-color: #662323;
-    font-family: 'Teko', sans-serif;
-    font-weight: 600;
-    font-size: clamp(.0em, 1em + 1vw, 2em);
-    text-decoration: none;
-    text-align: center;
-    color: white;
 }
 
 /* fim container maquina  */
@@ -102,33 +101,23 @@
 } */
 
 .container-player h1 {
-    font-size: clamp(.1em, 1em + 2vw, 4em);
+    font-size: clamp(0.1em, 1em + 2vw, 4em);
     color: #2707b6;
 }
 
 .container-player p {
     width: 40%;
-    font-size: clamp(.1em, 1em + .5vw, 1.2em);
+    font-size: clamp(0.1em, 1em + 0.5vw, 1.2em);
     text-align: center;
     color: #3b3b3b;
     border: 4px solid #3b3b3b;
 }
 
-.container-player .button {
-    width: 50%;
-    height: 12%;
+.btn_j {
     background-color: #2b1f5e;
-    font-family: 'Teko', sans-serif;
-    font-weight: 600;
-    font-size: clamp(.0em, 1em + 1vw, 2em);
-    text-decoration: none;
-    text-align: center;
-    color: white;
 }
 
 /* fim container player  */
-
-
 
 button:hover {
     transform: scale(1.1);
