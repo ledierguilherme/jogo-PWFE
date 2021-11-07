@@ -124,18 +124,3 @@ button:hover {
     transition: 0.7s;
 }
 
-/* @media (max-width: 768px) {
-    .container-modo-jogo{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .container-maquina {
-        width: 60%;
-        height: 40%;
-        gap: 10px;
-    }
-    img {
-        width: 20%;
-        height: 20%;
-    }
-} */

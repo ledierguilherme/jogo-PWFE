@@ -1,52 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/dificil.css" />
+        <script src="../scripts/dificil.js" defer></script>
+        <title>Jogo da velha - Modo Difícil</title>
+    </head>
+    <body>
+        <header>
+            <a href="../modoJogo.html">
+                <img src="../img/home.png" alt="home" id="home" />
+            </a>
+            <h1 id="tituloTurno"></h1>
+        </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    <title>Modo Difícil - Jogo da velha</title>
+        <h3>Nível Difícil</h3>
 
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/dificil.css" />
-</head>
+        <main>
+            <div class="grade">
+                <div class="celula" id="0" onclick="jogar(this.id)"></div>
+                <div class="celula" id="1" onclick="jogar(this.id)"></div>
+                <div class="celula" id="2" onclick="jogar(this.id)"></div>
 
-<body>
-    <h1>Player | vs | Máquina</h1>
-    <h2>Nível Difícil </h2>
+                <div class="celula" id="3" onclick="jogar(this.id)"></div>
+                <div class="celula" id="4" onclick="jogar(this.id)"></div>
+                <div class="celula" id="5" onclick="jogar(this.id)"></div>
 
-    <div class="area">
-        <div data-item="a1" class="item b r"></div>
-        <div data-item="a2" class="item b r"></div>
-        <div data-item="a3" class="item b"></div>
+                <div class="celula" id="6" onclick="jogar(this.id)"></div>
+                <div class="celula" id="7" onclick="jogar(this.id)"></div>
+                <div class="celula" id="8" onclick="jogar(this.id)"></div>
+            </div>
 
-        <div data-item="b1" class="item b r"></div>
-        <div data-item="b2" class="item b r"></div>
-        <div data-item="b3" class="item b"></div>
+            <div class="modalGanhador">
+                <div class="containerModalGanhador">
+                    <h1 id="vencedorModal"></h1>
+                    <button onclick="limparGrade(), ocultarModal()">
+                        Jogar novamente
+                    </button>
+                    <a href="../modoJogo.html">
+                        <button>Voltar ao menu</button>
+                    </a>
+                </div>
+            </div>
 
-        <div data-item="c1" class="item r"></div>
-        <div data-item="c2" class="item r"></div>
-        <div data-item="c3" class="item"></div>
-    </div>
 
-    <div class="info">
-        <div class="infoitem">
-            <div class="infotitulo">Jogada de:</div>
-            <div class="infocorpo vez">--</div>
-        </div>
-        <div class="infoitem">
-            <div class="infotitulo">Resultado</div>
-            <div class="infocorpo resultado">--</div>
-        </div>
-    </div>
+        </main>
 
-    <button class="reset">Restaurar</button>
+        <footer>
+            <img
+                src="../img/reiniciar.png"
+                alt="reiniciar"
+                id="reiniciar"
+                onclick="limparGrade()"
+            />
 
-    <!-- <script src=""></script> -->
-</body>
-
+            <div class="pontuacoes">
+                <div class="jogador">
+                    <h2 id="jogador">Vitórias</h2>
+                    <h2 id="pontosJogador"></h2>
+                </div>
+                <div class="empates">
+                    <h2 id="empates">Empates</h2>
+                    <h2 id="qtdeEmpates"></h2>
+                </div>
+                <div class="computador">
+                    <h2 id="computador">Derrotas</h2>
+                    <h2 id="pontosComputador"></h2>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
